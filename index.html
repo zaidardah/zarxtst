@@ -1,0 +1,390 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ZARX | White Edition</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@600;700;800;900&family=Orbitron:wght@600;700;800&family=Rajdhani:wght@500;600;700&family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="nav-main">
+    <div class="nav-right">
+      <a href="#products" class="nav-icon" aria-label="المفضلة">♡</a>
+      <button class="nav-icon" id="cart-button" aria-label="السلة">
+        🛒 <span class="nav-count" id="cart-count" hidden>0</span>
+      </button>
+      <button class="nav-icon" aria-label="دخول">♙</button>
+    </div>
+
+    <a href="#home" class="nav-logo" aria-label="ZARX">
+      <span class="logo-glow"></span>
+      <img src="./brand/logoWW.png" alt="ZARX"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+      <strong class="logo-fallback">ZARX</strong>
+      <span class="nav-beam"></span>
+    </a>
+
+    <div class="nav-left">
+      <button class="nav-search desktop" id="open-search">⌕ ابحث</button>
+      <nav class="desktop">
+        <a href="#products">اكسسوارات الهواتف</a>
+        <a href="#products">اكسسوارات الكمبيوتر</a>
+      </nav>
+      <button class="nav-icon mobile" id="menu-toggle" aria-label="القائمة">☰</button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu" hidden>
+    <button id="mobile-search">⌕ بحث</button>
+    <a href="#products">اكسسوارات الهواتف</a>
+    <a href="#products">اكسسوارات الكمبيوتر</a>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO: SAME SIX HEADPHONE IMAGES -->
+  <section class="hero" id="home">
+    <div class="grid-fade hero-grid"></div>
+    <div class="hero-glow"></div>
+
+    <div class="ear-carousel" id="ear-carousel" dir="ltr" aria-hidden="true">
+      <div class="ear-list">
+        <div class="ear-item"><img src="./img1.png" alt=""></div>
+        <div class="ear-item"><img src="./img2.png" alt=""></div>
+        <div class="ear-item"><img src="./img3.png" alt=""></div>
+        <div class="ear-item"><img src="./img4.png" alt=""></div>
+        <div class="ear-item"><img src="./img5.png" alt=""></div>
+        <div class="ear-item"><img src="./img6.png" alt=""></div>
+      </div>
+    </div>
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">ZARX AUDIO</p>
+        <h1>
+          SIGNAL
+          <span class="outlined">CLEAN</span>
+          <span class="accent">ZARX</span>
+        </h1>
+        <p class="hero-tagline">الوضوح عادة، مو صدفة.</p>
+        <p class="hero-description">
+          في ZARX السماعة هي الجلسة، وإكسسوار الهاتف هو الدرع.
+          نختار الأصل، نكتب الكفالة، ونوصل لكل فلسطين.
+        </p>
+        <div class="hero-buttons">
+          <a href="#products" class="btn btn-green">تسوق السماعات</a>
+          <a href="#products" class="btn btn-outline">تسوق إكسسوارات الهواتف</a>
+          <a href="#products" class="btn btn-accent">شاهد العروض</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ANIMATED TICKER -->
+  <section class="zarx-kinetic-banner" aria-label="ZARX Gaming and Technology">
+    <div class="zarx-products" aria-hidden="true">
+      <svg class="zarx-product zarx-p1" viewBox="0 0 64 64">
+        <path d="M12 34v-8a20 20 0 0 1 40 0v8"/>
+        <rect x="8" y="31" width="12" height="22" rx="5"/>
+        <rect x="44" y="31" width="12" height="22" rx="5"/>
+      </svg>
+      <svg class="zarx-product zarx-p2" viewBox="0 0 64 64">
+        <rect x="17" y="7" width="30" height="50" rx="15"/>
+        <path d="M32 7v22M17 29h30"/>
+      </svg>
+      <svg class="zarx-product zarx-p3" viewBox="0 0 64 64">
+        <rect x="4" y="16" width="56" height="32" rx="4"/>
+        <path d="M10 24h44M10 31h44M10 38h44"/>
+      </svg>
+      <svg class="zarx-product zarx-p4" viewBox="0 0 64 64">
+        <path d="M19 22 C12 22 9 27 7 35 L4 45 C3 51 8 55 13 52 L23 44 H41 L51 52 C56 55 61 51 60 45 L57 35 C55 27 52 22 45 22 Z"/>
+        <path d="M17 31v12M11 37h12"/>
+      </svg>
+      <svg class="zarx-product zarx-p5" viewBox="0 0 64 64">
+        <rect x="18" y="4" width="28" height="56" rx="5"/>
+        <path d="M27 10h10M29 54h6"/>
+      </svg>
+    </div>
+
+    <div class="zarx-kinetic-content">
+      <div class="zarx-kinetic-brand">
+        <img src="./brand/logoWW.png" alt="ZARX"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <strong class="logo-fallback">ZARX</strong>
+      </div>
+      <div class="zarx-word-stage">
+        <div class="zarx-kinetic-word zarx-word-green active">GAMING</div>
+        <div class="zarx-kinetic-word zarx-word-dark">TECH</div>
+        <div class="zarx-kinetic-word zarx-word-green">LEVEL UP</div>
+        <div class="zarx-kinetic-word zarx-word-dark">POWER</div>
+        <div class="zarx-kinetic-word zarx-word-green">ACCESSORIES</div>
+      </div>
+    </div>
+
+    <div class="zarx-kinetic-caption" id="ticker-caption">
+      اكتشف عالم الألعاب والإكسسوارات
+    </div>
+  </section>
+
+  <!-- PRODUCT CARDS -->
+  <section class="products-section" id="products">
+    <div class="product-row">
+      <div class="row-heading">
+        <div>
+          <p class="row-kicker">01 // ZARX AUDIO</p>
+          <h2>تسوق <span>السماعات</span></h2>
+        </div>
+        <div class="row-controls">
+          <a href="#products">عرض الكل ←</a>
+          <button class="scroll-btn" data-direction="1" aria-label="السابق">‹</button>
+          <span>01 / 02</span>
+          <button class="scroll-btn" data-direction="-1" aria-label="التالي">›</button>
+        </div>
+      </div>
+      <div class="product-strip" id="product-strip"></div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer id="contact">
+  <div class="footer-columns">
+    <div>
+      <img src="./brand/zarx-mark.png" class="footer-logo" alt="ZARX"
+           onerror="this.style.display='none'">
+      <strong class="footer-brand-fallback">ZARX</strong>
+      <p class="footer-intro">
+        سماعات بأفضل جودة، وإكسسوارات هاتف لكل ما تحتاجه.
+      </p>
+    </div>
+    <div>
+      <p class="footer-kicker">NAVIGATE</p>
+      <h3>روابط</h3>
+      <ul>
+        <li><a href="#home">» الرئيسية</a></li>
+        <li><a href="#products">» وصل حديثاً</a></li>
+        <li><a href="#products">» العروض</a></li>
+        <li><a href="#products">» الأكثر مبيعاً</a></li>
+        <li><a href="#products">» السماعات</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-kicker">SUPPORT</p>
+      <h3>خدمة العملاء</h3>
+      <ul>
+        <li><a href="#contact">» تواصل معنا</a></li>
+        <li><a href="#contact">» سياسة الإرجاع والتبديل</a></li>
+        <li><a href="#contact">» الشحن والتوصيل</a></li>
+        <li><a href="#contact">» سياسة الدفع</a></li>
+        <li><a href="#contact">» الكفالة</a></li>
+      </ul>
+    </div>
+    <div>
+      <p class="footer-kicker">CONTACT</p>
+      <h3>تواصل</h3>
+      <ul>
+        <li><a href="tel:+972594395564" dir="ltr">+972594395564</a></li>
+        <li>فلسطين</li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 ZARX — جميع الحقوق محفوظة</span>
+    <span>توصيل لكل فلسطين</span>
+  </div>
+</footer>
+
+<!-- SEARCH -->
+<div class="search-modal" id="search-modal" hidden>
+  <div class="search-panel">
+    <div class="search-head">
+      <strong>SEARCH</strong>
+      <button id="close-search" aria-label="إغلاق">✕</button>
+    </div>
+    <input id="search-input" placeholder="ابحث عن سماعة أو إكسسوار...">
+    <div id="search-results"></div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+  // بيانات تجريبية للمعاينة فقط
+  const products = [
+    {id:1,name:"سماعات ZARX — نموذج 01",price:149,old:179,stock:"in",image:"./img1.png"},
+    {id:2,name:"سماعات ZARX — نموذج 02",price:169,stock:"in",image:"./img2.png"},
+    {id:3,name:"سماعات ZARX — نموذج 03",price:189,stock:"low",image:"./img3.png"},
+    {id:4,name:"سماعات ZARX — نموذج 04",price:199,stock:"in",image:"./img4.png"},
+    {id:5,name:"سماعات ZARX — نموذج 05",price:219,stock:"out",image:"./img5.png"},
+    {id:6,name:"سماعات ZARX — نموذج 06",price:239,stock:"in",image:"./img6.png"}
+  ];
+
+  const strip = document.getElementById("product-strip");
+
+  strip.innerHTML = products.map(p => `
+    <div class="card-wrap">
+      <article class="zarx-card">
+        <div class="card-photo grid-fade">
+          <img src="${p.image}" alt="${p.name}" loading="lazy">
+          ${p.stock === "out" ? '<div class="out-overlay">نفد المخزون</div>' : ""}
+          <div class="price-flag">
+            ${p.old ? `<s>₪${p.old}</s>` : ""}
+            <b>${p.price}</b><span>₪</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <h3>${p.name}</h3>
+          <p class="stock-label">${p.stock === "out" ? "نفد المخزون" : p.stock === "low" ? "كمية محدودة" : "متوفر"}</p>
+          <div class="stock-bars">
+            ${Array.from({length:8},(_,i) =>
+              `<i class="${i < (p.stock === "out" ? 0 : p.stock === "low" ? 3 : 8) ? "filled" : ""}"></i>`
+            ).join("")}
+          </div>
+        </div>
+        <div class="card-actions">
+          <button class="favorite" aria-label="المفضلة">♡</button>
+          <button class="add-cart" data-stock="${p.stock}">
+            ${p.stock === "out" ? "أخبرني عند التوفّر" : "أضف للسلة"}
+          </button>
+        </div>
+      </article>
+      <svg class="card-trace" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">
+        <polygon class="card-dash"
+          points="50,100 100,100 100,66 84,56 84,40 100,30 100,0 0,0 0,30 16,40 16,56 0,66 0,100 50,100"
+          fill="none" stroke="#8fae4d" stroke-width="1.7"
+          vector-effect="non-scaling-stroke" pathLength="100"/>
+      </svg>
+    </div>
+  `).join("");
+
+  // حركة السماعات الأصلية
+  const carousel = document.getElementById("ear-carousel");
+  const earList = carousel.querySelector(".ear-list");
+  const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  if (!reduceMotion) {
+    setInterval(() => {
+      const first = earList.querySelector(".ear-item");
+      if (!first) return;
+      carousel.classList.remove("next");
+      earList.appendChild(first);
+      void carousel.offsetWidth;
+      carousel.classList.add("next");
+    }, 1350);
+  }
+
+  // حركة GAMING / TECH
+  const words = [...document.querySelectorAll(".zarx-kinetic-word")];
+  const captions = [
+    "اكتشف عالم الألعاب والإكسسوارات",
+    "تكنولوجيا تناسب أسلوب حياتك",
+    "ارتقِ بتجربتك إلى مستوى جديد",
+    "أداء وجودة في كل تفصيل",
+    "كل ما تحتاجه في مكان واحد"
+  ];
+  let active = 0;
+
+  if (!reduceMotion) {
+    setInterval(() => {
+      const old = active;
+      words[old].classList.remove("active");
+      words[old].classList.add("exit");
+      active = (active + 1) % words.length;
+      words[active].classList.remove("exit");
+      words[active].classList.add("active");
+      document.getElementById("ticker-caption").textContent = captions[active];
+      setTimeout(() => words[old].classList.remove("exit"), 750);
+    }, 3500);
+  }
+
+  // القائمة
+  const menu = document.getElementById("mobile-menu");
+  document.getElementById("menu-toggle").onclick = () => {
+    menu.hidden = !menu.hidden;
+  };
+
+  // البحث
+  const modal = document.getElementById("search-modal");
+  const input = document.getElementById("search-input");
+  function openSearch() {
+    modal.hidden = false;
+    input.focus();
+  }
+  document.getElementById("open-search").onclick = openSearch;
+  document.getElementById("mobile-search").onclick = () => {
+    menu.hidden = true;
+    openSearch();
+  };
+  document.getElementById("close-search").onclick = () => modal.hidden = true;
+  modal.onclick = e => {
+    if (e.target === modal) modal.hidden = true;
+  };
+  document.addEventListener("keydown", e => {
+    if (e.key === "Escape") modal.hidden = true;
+  });
+  input.oninput = () => {
+    const term = input.value.trim();
+    document.getElementById("search-results").innerHTML = term
+      ? products.filter(p => p.name.includes(term))
+          .map(p => `<p class="search-result">${p.name} — ₪${p.price}</p>`).join("") || "لا توجد نتائج"
+      : "";
+  };
+
+  // أزرار المعاينة
+  let cart = 0;
+  const toast = document.getElementById("toast");
+  let toastTimer;
+  function notify(message) {
+    toast.textContent = message;
+    toast.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(() => toast.classList.remove("show"), 2200);
+  }
+
+  document.querySelectorAll(".add-cart").forEach(button => {
+    button.onclick = () => {
+      if (button.dataset.stock === "out") {
+        notify("ميزة التنبيه تحتاج ربط المتجر الأصلي");
+        return;
+      }
+      cart++;
+      const count = document.getElementById("cart-count");
+      count.hidden = false;
+      count.textContent = cart;
+      notify("تمت الإضافة للسلة التجريبية");
+    };
+  });
+
+  document.querySelectorAll(".favorite").forEach(button => {
+    button.onclick = () => {
+      button.classList.toggle("liked");
+      button.textContent = button.classList.contains("liked") ? "♥" : "♡";
+    };
+  });
+
+  document.getElementById("cart-button").onclick = () => {
+    notify(`السلة التجريبية: ${cart} منتج`);
+  };
+
+  document.querySelectorAll(".scroll-btn").forEach(button => {
+    button.onclick = () => {
+      strip.scrollBy({
+        left: Number(button.dataset.direction) * 300,
+        behavior: "smooth"
+      });
+    };
+  });
+</script>
+
+</body>
+</html>
